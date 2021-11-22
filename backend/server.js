@@ -1,4 +1,4 @@
-// Importer le package HTTP de node.js pour créer le serveur
+// Importer le package HTTP de node.js
 const http = require("http");
 
 // Importer l'application app.js
