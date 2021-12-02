@@ -1,14 +1,14 @@
 const Sauce = require('../models/sauce');
 const fs = require('fs');
 
-// Retourner toutes les sauces
+// Afficher toutes les sauces
 exports.getAllSauces = (req, res, next) => {
     Sauce.find()
         .then((sauces) => { res.status(200).json(sauces) })
         .catch((error) => { res.status(400).json({ error }) });
 };
 
-// Retourner la sauce avec l'_id fourni
+// Afficher une sauce
 exports.getOneSauce = (req, res, next) => {
     Sauce.findOne({ _id: req.params.id })
         .then((sauce) => { res.status(200).json(sauce) })
@@ -24,8 +24,7 @@ exports.createSauce = (req, res, next) => {
         imageUrl: `${req.protocol}://${req.get('host')}/images/${req.file.filename}`,
         likes: 0,
         dislikes: 0,
-        usersLiked: [' '],
-        usersdisLiked: [' '],
+
     });
     sauce.save()
         .then(() => res.status(201).json({ message: 'Nouvelle Sauce créée !' }))
