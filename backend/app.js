@@ -1,12 +1,23 @@
-// Importation de Express
+// Importer Express
 const express = require('express');
 
+// Importer body-parser
 const bodyParser = require('body-parser');
+
+// Importer mongoose
 const mongoose = require('mongoose');
 
 const sauceRoutes = require('./routes/sauce');
 const userRoutes = require('./routes/user');
 const path = require('path');
+
+// Créer une application Express
+const app = express();
+
+// Importer les variables d'environnement
+const dotenv = require('dotenv');
+dotenv.config();
+
 
 mongoose.connect('mongodb+srv://piiquante:123@cluster0.zksbf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
   {
@@ -15,9 +26,6 @@ mongoose.connect('mongodb+srv://piiquante:123@cluster0.zksbf.mongodb.net/myFirst
   })
   .then(() => console.log('Connexion à MongoDB réussie !'))
   .catch(() => console.log('Connexion à MongoDB échouée !'));
-
-// Créer une application Express
-const app = express();
 
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
