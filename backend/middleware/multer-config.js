@@ -1,5 +1,7 @@
+// Importer multer pour charger des images
 const multer = require('multer');
 
+// Differents formats d'images
 const MIME_TYPES = {
     'image/jpg': 'jpg',
     'image/jpeg': 'jpg',
