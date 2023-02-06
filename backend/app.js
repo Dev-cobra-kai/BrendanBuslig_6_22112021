@@ -49,3 +49,4 @@ app.use('/images', express.static(path.join(__dirname, 'images')));
 
 // Exporter app.js pour pouvoir y accèder depuis un autre fichier
 module.exports = app;
+
