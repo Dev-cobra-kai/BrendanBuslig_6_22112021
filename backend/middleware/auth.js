@@ -2,7 +2,7 @@
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
 
-// Exporter le module
+// Utilisateur authentifié = routes sécurisées
 module.exports = (req, res, next) => {
     try {
         const token = req.headers.authorization.split(' ')[1];
