@@ -1,8 +1,7 @@
 // Importer Bcrypt pour hasher le password
 const bcrypt = require('bcrypt');
-// Importer JsonWebToken
+// Importer JsonWebToken d'authentification
 const jwt = require('jsonwebtoken');
-const validator = require('email-validator');
 // Importer user du dossier models
 const User = require('../models/user');
 
