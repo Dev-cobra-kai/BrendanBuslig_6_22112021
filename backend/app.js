@@ -40,7 +40,7 @@ mongoose.connect(`mongodb+srv://${process.env.BDD_USERNAME}:${process.env.BDD_PA
   .catch(() => console.log('Connexion à MongoDB échouée !'));
 
 // Ajoute helmet pour protéger les routes
-app.use(helmet());
+app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
 
 // Gérer les problèmes de CORS
 app.use((req, res, next) => {
