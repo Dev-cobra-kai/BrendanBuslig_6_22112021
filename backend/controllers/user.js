@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 // Importer user du dossier models
 const User = require('../models/user');
 
-// Enregistrer un nouvel utilisateur dans la BDD
+// Inscrire un nouvel utilisateur dans la BDD (sign up)
 exports.signup = (req, res, next) => {
      // Hasher le password avant de l'envoyer dans la BDD
     bcrypt.hash(req.body.password, 10)
@@ -22,7 +22,7 @@ exports.signup = (req, res, next) => {
         .catch(error => res.status(500).json({ error }));
 };
 
-// Connecter un utilisateur dans la BDD
+// Connecter un utilisateur dans la BDD (login)
 exports.login = (req, res, next) => {
     // Rechercher si le mail est présent dans la BDD
     User.findOne({ email: req.body.email })

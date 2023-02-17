@@ -1,4 +1,5 @@
-// Models : Permet de créer des schémas de données qui contiennent les champs souhaités pour indiquer leur type ainsi que leur caractère (obligatoire ou non)
+// Models : Permet de créer des schémas de données qui contiennent les champs souhaités
+// pour indiquer leur type ainsi que leur caractère (obligatoire ou non)
 // Pour cela, on utilise la méthode Schema mise à disposition par Mongoose
 
 // Importer mongoose (Bibliothèque de programmation orientée objet JavaScript qui crée une connexion entre MongoDB et l'environnement d'exécution JavaScript Node.js)

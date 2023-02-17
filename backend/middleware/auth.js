@@ -1,4 +1,4 @@
-// Middleware : Des fonctions qui s'exécutent lors de la requête au serveur
+// Middleware : Exécute des fonctions lors de la requête au serveur
 
 // Importer JsonWebToken
 const jwt = require('jsonwebtoken');

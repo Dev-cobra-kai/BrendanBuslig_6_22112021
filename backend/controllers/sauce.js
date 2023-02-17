@@ -1,4 +1,4 @@
-// Controllers : Dossier pour mettre tous les codes d'implémentation de routes
+// Controllers : Permet de mettre tous les codes d'implémentation de routes
 
 const Sauce = require('../models/sauce');
 const fs = require('fs');
