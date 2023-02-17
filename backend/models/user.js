@@ -1,4 +1,4 @@
-// Importer mongoose
+// Importer mongoose (Bibliothèque de programmation orientée objet JavaScript qui crée une connexion entre MongoDB et l'environnement d'exécution JavaScript Node.js)
 const mongoose = require('mongoose');
 // Importer mongoose-unique-validator
 const uniqueValidator = require('mongoose-unique-validator');

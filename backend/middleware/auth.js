@@ -1,3 +1,5 @@
+// Middleware : Des fonctions qui s'exécutent lors de la requête au serveur
+
 // Importer JsonWebToken
 const jwt = require('jsonwebtoken');
 require('dotenv').config();

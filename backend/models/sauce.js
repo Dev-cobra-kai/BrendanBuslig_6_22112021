@@ -1,9 +1,12 @@
-// Importer mongoose
+// Models : Permet de créer des schémas de données qui contiennent les champs souhaités pour indiquer leur type ainsi que leur caractère (obligatoire ou non)
+// Pour cela, on utilise la méthode Schema mise à disposition par Mongoose
+
+// Importer mongoose (Bibliothèque de programmation orientée objet JavaScript qui crée une connexion entre MongoDB et l'environnement d'exécution JavaScript Node.js)
 const mongoose = require('mongoose');
 
 // Importer le schéma des sauces
 const sauceSchema = mongoose.Schema({
-  userId: { type: String, required: true }, // Permet de pas voir le modify et delete lors du login
+  userId: { type: String, required: true }, // Permet de ne pas voir le modify et delete avec un nouveau login
   name: { type: String, required: true },
   manufacturer: { type: String, required: true },
   description: { type: String, required: true },

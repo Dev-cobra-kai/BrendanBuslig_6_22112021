@@ -1,3 +1,5 @@
+// Routes : Dossier pour mettre toutes les routes pour une ressource en particulier
+
 const express = require('express');
 const router = express.Router();
 
