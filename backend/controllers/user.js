@@ -1,6 +1,6 @@
-// Importer Bcrypt pour hasher le password
+// Importer Bcrypt pour hasher le password (Empêche de récupérer les données personnelles)
 const bcrypt = require('bcrypt');
-// Importer JsonWebToken d'authentification
+// Importer JsonWebToken d'authentification (Permet de fournir un niveau de sécurité supplémentaire pour accéder aux données ou à un réseau)
 const jwt = require('jsonwebtoken');
 // Importer user du dossier models
 const User = require('../models/user');

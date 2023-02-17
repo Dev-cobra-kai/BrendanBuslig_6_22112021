@@ -1,10 +1,12 @@
-// Importer Express
+// Le fichier app. js contient le code JavaScript permettant de démarrer un serveur et de répondre aux requêtes
+
+// Importer Express (un framework pour construire des applications web basées sur Node.js)
 const express = require('express');
 
-// Importer body-parser
+// Importer body-parser (Ce module permet d'interpréter, d'où le nom “parser”, le corps JSON d'une réponse HTTP)
 const bodyParser = require('body-parser');
 
-// Importer mongoose
+// Importer mongoose (Bibliothèque de programmation orientée objet JavaScript qui crée une connexion entre MongoDB et l'environnement d'exécution JavaScript Node.js)
 const mongoose = require('mongoose');
 
 // Importer la route des sauces
@@ -16,7 +18,7 @@ const userRoutes = require('./routes/user');
 // Importer les chemins de fichiers et de répertoires
 const path = require('path');
 
-// Importer helmet
+// Importer helmet (Permet de sécuriser vos applications Express en définissant divers en-têtes http)
 const helmet = require('helmet');
 
 // Créer une application Express
