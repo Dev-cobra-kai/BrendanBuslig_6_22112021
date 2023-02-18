@@ -23,7 +23,7 @@ console.log(passwordSchema.validate('invalidPASS'));
 // Vérifier la qualité du password par rapport au schema
 module.exports = (req, res, next) => {
     if (!passwordSchema.validate(req.body.password)) {
-        return res.status(400).json({ error: "Le mot de passe doit faire minimum 8 caractère, une majuscule, une minuscule, 2 chiffres, pas d'espaces. " });
+        return res.status(400).json({ error: "Les conditions de sécurité pour le mot de passe ne sont pas respectées : minimum 8 caractères, une majuscule, une minuscule, 2 chiffres, aucun espace." });
     } else {
         next();
     }

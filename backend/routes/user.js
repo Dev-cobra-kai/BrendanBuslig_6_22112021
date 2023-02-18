@@ -10,7 +10,7 @@ const password = require('../middleware/password');
 const userCtrl = require('../controllers/user');
 
 // La route signup
-router.post('/signup',password, userCtrl.signup);
+router.post('/signup', password, userCtrl.signup);
 // La route login
 router.post('/login', userCtrl.login);
 
