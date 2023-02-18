@@ -3,7 +3,7 @@ const express = require('express');
 // Fonction Router()
 const router = express.Router();
 
-// Importe password du middleware
+// Importer password du middleware
 const password = require('../middleware/password');
 
 // Importer controllers/user.js
